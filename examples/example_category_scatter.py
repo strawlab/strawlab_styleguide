@@ -26,7 +26,7 @@ def make_category_scatter_figure():
     spine_placer(ax1, location='left,bottom' )
 
     # Finalize the category scatter plot (stuff that can only be done
-    # after the spines are placed.
+    # after the spines are placed).
     cs.finalize()
 
     # Add standard y label.
@@ -41,7 +41,7 @@ def make_category_scatter_figure():
     return fig
 
 if __name__=='__main__':
-    np.random.seed(3)
+    np.random.seed(3) # ensure that example always looks the same
     fig = make_category_scatter_figure()
     if 0:
         plt.show()
