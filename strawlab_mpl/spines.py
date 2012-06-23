@@ -31,8 +31,9 @@ def auto_reduce_spine_bounds( ax ):
     ymax = max(y0,y1)
     good_cond = (yticks >= ymin) & (yticks <= ymax)
     yticks = yticks[good_cond]
-    ax.spines['left'].set_bounds( yticks[0], yticks[-1] )
-    ax.spines['right'].set_bounds( yticks[0], yticks[-1] )
+    if len(yticks):
+        ax.spines['left'].set_bounds( yticks[0], yticks[-1] )
+        ax.spines['right'].set_bounds( yticks[0], yticks[-1] )
 
 
     xticks = ax.get_xticks()
@@ -41,5 +42,6 @@ def auto_reduce_spine_bounds( ax ):
     xmax = max(x0,x1)
     good_cond = (xticks >= xmin) & (xticks <= xmax)
     xticks = xticks[good_cond]
-    ax.spines['top'].set_bounds( xticks[0], xticks[-1] )
-    ax.spines['bottom'].set_bounds( xticks[0], xticks[-1] )
+    if len(xticks):
+        ax.spines['top'].set_bounds( xticks[0], xticks[-1] )
+        ax.spines['bottom'].set_bounds( xticks[0], xticks[-1] )
