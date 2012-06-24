@@ -14,7 +14,7 @@ class ManyTimeseries:
             'all': dict(lw=0.2, color='k', alpha=0.6 ),
             'std': dict(alpha=0.4, facecolor='red', edgecolor='none'),
             'mean': dict(lw=2, color='red' ),
-            'global': dict(),
+            'global': dict(rasterized=True),
             }
 
         if 'all' in show:
