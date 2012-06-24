@@ -47,6 +47,6 @@ if __name__=='__main__':
         plt.show()
     if 1:
         # Saving as .svg will allow opening and editing in Inkscape.
-        fname = 'scat.svg'
+        fname = 'panel_scatter.svg'
         fig.savefig(fname)
         print 'saved',fname

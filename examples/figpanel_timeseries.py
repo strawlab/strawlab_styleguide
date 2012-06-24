@@ -57,6 +57,6 @@ if __name__=='__main__':
     if 0:
         plt.show()
     if 1:
-        fname = 'ts.svg'
+        fname = 'panel_timeseries.svg'
         fig.savefig(fname)
         print 'saved',fname
