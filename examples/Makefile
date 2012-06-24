@@ -1,6 +1,9 @@
-all: fig1.svg
+all: fig1.svg fig1.png
 
-fig1_panels = panel_timeseries.svg panel_scatter.svg
+fig1_panels = panel_timeseries.svg panel_timeseries.png panel_scatter.svg panel_scatter.png
+
+%.png: %.svg
+	inkscape -f $< --export-dpi=90  --export-background=white --export-png=$@
 
 panel_timeseries.svg: figpanel_timeseries.py
 	python figpanel_timeseries.py
@@ -13,4 +16,4 @@ fig1.svg: $(fig1_panels) fig1.py
 
 .PHONY: clean
 clean:
-	rm -f *.svg
+	rm -f *.svg *.png
