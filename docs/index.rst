@@ -6,12 +6,10 @@
 Welcome to strawlab styleguide's documentation!
 ===============================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
 
-
+   plotting
 
 Indices and tables
 ==================
@@ -19,4 +17,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
