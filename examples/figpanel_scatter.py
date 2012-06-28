@@ -65,7 +65,7 @@ if __name__=='__main__':
     if 1:
         np.random.seed(3) # ensure that example always looks the same
         bad_fig = make_bad_figure()
-        fname = 'scatter_bad.png'
+        fname = 'scatter_bad.svg'
         bad_fig.savefig(fname)
         print 'saved',fname
 
