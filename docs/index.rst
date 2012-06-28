@@ -6,6 +6,10 @@
 welcome to the strawlab styleguide
 ==================================
 
+.. warning:: This is a work in progress. Some parts are unfinished and
+    undocumented. As always, when in doubt, `use the source
+    <http://github.com/strawlab/strawlab_styleguide>`_.
+
 .. toctree::
    :maxdepth: 2
 
