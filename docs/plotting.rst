@@ -23,7 +23,11 @@ plot on the left. On the right is an example with much better style.
 Example 2 - timeseries data
 ---------------------------
 
-Our second example is timeseries data.
+Our second example is timeseries data. The top plot shows three
+individual trials (in grey) and the mean (in red). The bottom plot
+shows the mean (red line) in a shaded region denoting the standard
+deviation. These are both good ways to convey the mean response while
+still showing some of the underlying variation.
 
 .. image:: images/panel_timeseries.png
 
