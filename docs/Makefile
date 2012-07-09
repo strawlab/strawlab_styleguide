@@ -162,3 +162,4 @@ buildimages:
 
 publish: singlehtml
 	rsync -avzP _build/singlehtml/ rs1-strawlab:/home/strawlab-public-webserver/strawlab.org/styleguide
+	ssh rs1-strawlab "chown -R strawlab-public-webserver.strawlab-public-webserver /home/strawlab-public-webserver/strawlab.org/styleguide"
