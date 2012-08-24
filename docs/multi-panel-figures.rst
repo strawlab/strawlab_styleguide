@@ -67,3 +67,12 @@ Inkscape can be scripted to export files at the command line. For
 example, this will render a .png file of <INPUT_FILENAME>::
 
     inkscape -f <INPUT_FILENAME> --export-dpi=90  --export-background=white --export-png=OUTPUT_FILENAME
+
+bringing it all together with make
+----------------------------------
+
+I automate the whole show with the venerable make command. For an
+example of usage, see `the example Makefile
+<https://github.com/strawlab/strawlab_styleguide/blob/master/examples/Makefile>`_
+which will automatically update a final figure when run, but it will
+only rebuild the necessary parts based on while files were changed.
