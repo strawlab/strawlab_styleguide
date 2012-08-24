@@ -14,3 +14,4 @@ welcome to the strawlab styleguide
    :maxdepth: 2
 
    plotting
+   multi-panel-figures
