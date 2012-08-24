@@ -7,8 +7,9 @@ Tufte's works <http://www.edwardtufte.com/tufte/books_vdqi>`_ are
 great inspiration here.
 
 There is no completely automated way to make such plots, but the
-**strawlab_mpl** package contains various utilities that make this
-easier when using `matplotlib <http://matplotlib.sourceforge.net>`_.
+`strawlab_mpl <https://github.com/strawlab/strawlab_styleguide.git>`_
+package contains various utilities that make this easier when using
+`matplotlib <http://matplotlib.sourceforge.net>`_.
 
 Example 1 - category scatter plot
 ---------------------------------

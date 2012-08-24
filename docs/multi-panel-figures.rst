@@ -1,4 +1,4 @@
-multi panel figures
+multi-panel figures
 ===================
 
 Most figures in most papers often have many panels. Regenerating a
