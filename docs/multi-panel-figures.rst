@@ -43,12 +43,12 @@ Under the hood, the important parts of the above are::
 The second tip for nice svg files is to let matplotlib convert any
 elements with many data into a raster plot. This dramatically
 decreases file size and rendering work. Doing this is very simple --
-include a "rasterize=True" kwarg when calling your relevant
+include a "rasterized=True" kwarg when calling your relevant
 matmplotlib command::
 
     ax.plot( giant_array_of_x_values,
              giant_array_of_y_values,
-             rasterize=True)
+             rasterized=True)
 
 
 compose these panels into a figure using svg_stack
