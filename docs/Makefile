@@ -161,4 +161,4 @@ buildimages:
 	cd ../examples && $(MAKE)
 
 publish: singlehtml
-	rsync -avzP _build/singlehtml/ strawlab-org-worker1:/usr/share/nginx/strawlab.org-styleguide/
+	boto-rsync --grant public-read _build/singlehtml/ s3://styleguide.strawlab.org/
