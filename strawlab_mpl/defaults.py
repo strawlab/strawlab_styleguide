@@ -58,3 +58,19 @@ def setup_defaults():
 
     if is_ubuntu():
         verify_ms_fonts_on_ubuntu()
+
+def setup_dark_output():
+    rcParams = matplotlib.rcParams
+    rcParams['axes.facecolor'] = '#000000'
+    rcParams['axes.edgecolor'] = '#ffffff'
+    rcParams['figure.facecolor'] = '#000000'
+    rcParams['figure.edgecolor'] = '#000000'
+    rcParams['savefig.facecolor'] = '#000000'
+    rcParams['savefig.edgecolor'] = '#000000'
+    rcParams['grid.color'] = '#ffffff'
+    rcParams['ytick.color'] = '#ffffff'
+    rcParams['xtick.color'] = '#ffffff'
+    rcParams['axes.labelcolor'] = '#ffffff'
+    rcParams['text.color'] = '#ffffff'
+    rcParams['patch.edgecolor'] = '#ffffff'
+
