@@ -14,11 +14,11 @@ bad_good_panels = scatter_bad.svg scatter_bad.png panel_scatter.svg panel_scatte
 
 # build our timeseries panel
 panel_timeseries.svg: figpanel_timeseries.py
-	python figpanel_timeseries.py
+	python $<
 
 # build our scatterplot panels (two targets)
 scatter_bad.svg panel_scatter.svg: figpanel_scatter.py
-	python figpanel_scatter.py
+	python $<
 
 # combine panels into a single whole-figure svg file
 fig1.svg: $(fig1_panels) fig1.py
